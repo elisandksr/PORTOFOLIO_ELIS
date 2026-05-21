@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elis Andikasari | Portfolio</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Devicon for Tech Logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Neon Background Blobs -->
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+    <div class="bg-glow blob-3"></div>
+    <div class="bg-glow blob-4"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">Elis<span>.</span></a>
+
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">Tentang</a>
+                <a href="#showcase">Portofolio</a>
+                <a href="#experience">Pengalaman</a>
+                <a href="#contact">Kontak</a>
+            </nav>
+
+            <div style="display: flex; gap: 15px; align-items: center;">
+                <button id="theme-btn" aria-label="Toggle Dark Mode"
+                    style="background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--text-primary);">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <button class="menu-toggle" aria-label="Open Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content reveal">
+
+                <h1 class="hero-title">
+                    Hai, Saya <span class="gradient-text">Elis Andikasari</span><br>
+                    <span style="font-size: 0.45em; font-weight: 450; color: var(--text-secondary);">Software
+                        Engineering Student</span>
+                </h1>
+                <p class="hero-subtitle">Saya berfokus pada pengembangan website, aplikasi mobile, dan desain digital
+                    untuk
+                    menciptakan tampilan yang modern, responsif, menarik, dan nyaman digunakan.</p>
+            </div>
+
+            <div class="hero-visual reveal">
+                <!-- Glowing Backdrops -->
+                <div class="glow-orb orb-1"></div>
+                <div class="glow-orb orb-2"></div>
+
+                <!-- Interactive Icon Cluster -->
+                <div class="hero-icon-cluster">
+                    <div class="main-icon glass">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="orbit-icons">
+                        <div class="orbit-icon icon-1 glass"><i class="fa-brands fa-golang"></i></div>
+                        <div class="orbit-icon icon-2 glass"><i class="fa-brands fa-html5"></i></div>
+                        <div class="orbit-icon icon-3 glass"><i class="fa-brands fa-js"></i></div>
+                        <div class="orbit-icon icon-4 glass"><i class="fa-brands fa-php"></i></div>
+
+                    </div>
+                </div>
+
+                <!-- Floating Elements -->
+                <div class="floating-badge badge-1 glass">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Design</span>
+                </div>
+                <div class="floating-badge badge-2 glass">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <span>Web Development</span>
+                </div>
+                <div class="glass-shape circle"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About Me -->
+    <section id="about" class="section reveal about-section">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+
+            <div class="about-grid">
+                <!-- Visual Left Side -->
+                <div class="about-visual">
+                    <div class="about-img-card glass">
+                        <img src="porto.png" alt="Elis Andikasari" class="about-img">
+                        <div class="about-experience-badge glass">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Creative Developer</span>
+                        </div>
+                    </div>
+                    <div class="visual-accent-1"></div>
+                    <div class="visual-accent-2"></div>
+                </div>
+
+                <!-- Text Right Side -->
+                <div class="about-content">
+                    <div class="about-header">
+                        <span class="about-greeting">Eksplorasi</span>
+                        <h2>Siapa Saya & Apa yang Saya Lakukan</h2>
+                    </div>
+
+                    <div class="about-desc-wrapper" style="margin-bottom: 35px; border-left: 4px solid var(--electric-blue); padding-left: 20px; background: linear-gradient(90deg, rgba(79, 109, 255, 0.05) 0%, transparent 100%); border-radius: 0 15px 15px 0; padding-top: 15px; padding-bottom: 15px;">
+                        <p style="font-size: 1.1rem; color: var(--text-primary); line-height: 1.8; margin-bottom: 15px;">
+                            Saya adalah <strong>mahasiswa D4 Teknologi Rekayasa Perangkat Lunak semester 6</strong> di Universitas Duta Bangsa Surakarta yang memiliki minat di bidang pengembangan website, aplikasi mobile, dan desain digital.
+                        </p>
+                        <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8;">
+                            Selama perkuliahan, saya mempelajari pemrograman dan multimedia serta mengerjakan berbagai project seperti website, aplikasi mobile, sistem backend, animasi, desain poster, infografis, dan media visual lainnya. Saya senang menciptakan tampilan digital yang modern, responsif, dan menarik, sekaligus terus mengembangkan kemampuan di bidang teknologi dan desain.
+                        </p>
+                    </div>
+
+                    <div class="about-info-cards">
+                        <div class="info-card glass" style="padding: 16px;">
+                            <div class="info-icon" style="background: linear-gradient(135deg, rgba(79, 109, 255, 0.1), rgba(122, 60, 255, 0.1)); color: var(--electric-blue);"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div class="info-text">
+                                <span style="font-size: 0.75rem; margin-bottom: 2px;">Pendidikan</span>
+                                <h4 style="font-size: 0.95rem;">Universitas Duta Bangsa</h4>
+                            </div>
+                        </div>
+                        <div class="info-card glass" style="padding: 16px;">
+                            <div class="info-icon" style="background: linear-gradient(135deg, rgba(255, 77, 141, 0.1), rgba(122, 60, 255, 0.1)); color: var(--magenta-pink);"><i class="fa-solid fa-laptop-code"></i></div>
+                            <div class="info-text">
+                                <span style="font-size: 0.75rem; margin-bottom: 2px;">Prodi</span>
+                                <h4 style="font-size: 0.95rem;">D4 TRPL</h4>
+                            </div>
+                        </div>
+                        <div class="info-card glass" style="padding: 16px;">
+                            <div class="info-icon" style="background: linear-gradient(135deg, rgba(82, 229, 255, 0.1), rgba(79, 109, 255, 0.1)); color: var(--bright-cyan);"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="info-text">
+                                <span style="font-size: 0.75rem; margin-bottom: 2px;">Lokasi</span>
+                                <h4 style="font-size: 0.95rem;">Surakarta, ID</h4>
+                            </div>
+                        </div>
+                        <div class="info-card glass" style="padding: 16px;">
+                            <div class="info-icon" style="background: linear-gradient(135deg, rgba(255, 152, 0, 0.1), rgba(255, 77, 141, 0.1)); color: #FF9800;"><i class="fa-solid fa-heart"></i></div>
+                            <div class="info-text">
+                                <span style="font-size: 0.75rem; margin-bottom: 2px;">Minat</span>
+                                <h4 style="font-size: 0.95rem;">Web & Mobile Developer</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="CV.pdf" class="btn btn-primary glow-btn"><i class="fa-solid fa-download"></i>
+                            Unduh CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Portfolio Showcase -->
+    <section id="showcase" class="section reveal showcase-section">
+        <div class="container">
+            <div class="showcase-header text-center">
+                <h2 class="showcase-title">Portofolio Showcase</h2>
+                <p class="showcase-subtitle">Eksplorasi perjalanan saya melalui proyek, sertifikasi, dan keahlian
+                    teknis.</p>
+            </div>
+
+            <div class="tabs-wrapper">
+                <div class="tab-list glass">
+                    <div class="tab-indicator"></div>
+                    <button class="tab-btn active" data-tab="projects">Proyek</button>
+                    <button class="tab-btn" data-tab="certificates">Sertifikat</button>
+                    <button class="tab-btn" data-tab="tech">Tech Stack</button>
+                    <button class="tab-btn" data-tab="design">Desain</button>
+                </div>
+            </div>
+
+            <div class="tab-content-container">
+                <!-- Projects Tab -->
+                <div class="tab-pane active" id="tab-projects">
+                    <div class="slider-wrapper">
+                        <button class="slider-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="projects-grid">
+
+                            <div class="project-card showcase-card" data-type="Project"
+                                data-bg="Banyak barang bekas yang masih layak digunakan justru menjadi limbah karena kurangnya platform yang memfasilitasi distribusi. ReBox hadir sebagai solusi digital untuk mengurangi limbah sekaligus membantu masyarakat."
+                                data-features="Registrasi & Login pengguna, Halaman utama (home), Detail barang donasi, Pencarian barang, Sistem request/klaim barang, Riwayat donasi & klaim"
+                                data-tech="Flutter, Dart, Supabase">
+                                <div class="project-img-container">
+                                    <img src="rebox.png" alt="ReBox – Aplikasi Donasi Barang Bekas" class="project-img">
+                                    <div class="project-overlay">
+                                        <a href="https://github.com/elisandksr/reboxproject1.git" class="btn-icon"
+                                            target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">ReBox – Aplikasi Donasi Barang Bekas</h3>
+                                    <p class="project-desc">ReBox adalah aplikasi mobile yang dirancang
+                                        untuk mempermudah proses donasi barang bekas agar dapat dimanfaatkan kembali
+                                        oleh orang yang membutuhkan</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Flutter</span>
+                                        <span class="tech-tag">Dart</span>
+                                        <span class="tech-tag">Supabase</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card showcase-card" data-type="Project"
+                                data-bg="Kebutuhan akan hunian kost yang sesuai seringkali sulit dipenuhi tanpa survey langsung. Jasa Survey Kost hadir untuk memberikan informasi akurat bagi pencari kost di Solo Raya."
+                                data-features="Registrasi & login, pemesanan survey kost, pembayaran online, dashboard admin & pengguna, laporan survey"
+                                data-tech="HTML, CSS, JavaScript, PHP, MySQL, XAMPP">
+                                <div class="project-img-container">
+                                    <img src="solo.png" alt="Sistem Informasi Jasa Survey Kost" class="project-img">
+                                    <div class="project-overlay">
+                                        <a href="https://github.com/elisandksr/project_jasa_survey_kost.git"
+                                            class="btn-icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Sistem Informasi Jasa Survey Kost</h3>
+                                    <p class="project-desc">Sistem Informasi Jasa Survey Kost adalah aplikasi web untuk
+                                        pemesanan jasa survey kost dan akses laporan kondisi kost secara digital, mudah,
+                                        dan
+                                        transparan.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">PHP</span>
+                                        <span class="tech-tag">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card showcase-card" data-type="Project"
+                                data-bg="Pengelolaan perpustakaan secara manual sering menyebabkan kesalahan pencatatan dan kurang efisien, sehingga diperlukan sistem digital untuk mempermudah pengelolaan data dan layanan perpustakaan."
+                                data-features="Login,Manajemen Buku, Peminjaman & Pengembalian,Notifikasi Laporan"
+                                data-tech="Golang, MySQL, JWT (JSON Web Token), HTML, CSS, JavaScript">
+                                <div class="project-img-container">
+                                    <img src="simpus.png" alt="SIMPUS" class="project-img">
+                                    <div class="project-overlay">
+                                        <a href="https://github.com/elisandksr/web_simpus.git" class="btn-icon"
+                                            target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Sistem Informasi Perpustakaan</h3>
+                                    <p class="project-desc">SIMPUS adalah aplikasi yang dirancang untuk membantu
+                                        pengelolaan data perpustakaan seperti buku, anggota, serta proses peminjaman dan
+                                        pengembalian secara digital.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">Golang</span>
+                                        <span class="tech-tag">MySQL</span>
+                                        <span class="tech-tag">JWT</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="project-card showcase-card" data-type="Project"
+                                data-bg="Pengelolaan inventaris secara manual sering menyebabkan kesalahan pencatatan dan kesulitan dalam memantau stok barang, sehingga diperlukan sistem yang lebih terstruktur dan efisien."
+                                data-features="Manajemen Barang, Supplier, Stok, Transaksi Barang Masuk & Keluar, Laporan Inventaris, dan Login Admin."
+                                data-tech="PHP, CodeIgniter, MySQL, HTML, CSS, JavaScript">
+                                <div class="project-img-container">
+                                    <img src="tokohp.png" alt="Sistem Inventaris Gudang Toko HP" class="project-img">
+                                    <div class="project-overlay">
+                                        <a href="https://github.com/elisandksr/inventaris_toko_hp.git" class="btn-icon"
+                                            target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div class="project-content">
+                                    <h3 class="project-title">Sistem Inventaris Gudang Toko HP</h3>
+                                    <p class="project-desc">Sistem Inventaris Gudang Toko HP adalah aplikasi berbasis
+                                        web yang digunakan untuk mengelola data barang, supplier, serta transaksi barang
+                                        masuk dan keluar secara digital.</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">PHP</span>
+                                        <span class="tech-tag">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="slider-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Certificates Tab -->
+                <div class="tab-pane" id="tab-certificates">
+                    <div class="slider-wrapper">
+                        <button class="slider-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="cert-grid">
+                            <div class="cert-card glass">
+                                <div class="cert-img-wrapper">
+                                    <img src="Sertif4.png" alt="Certificate" class="cert-img">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>SENATIB 2024 – Transformasi Bisnis melalui IoT dan AI</h4>
+                                    <span class="cert-issuer">Universitas Duta Bangsa</span>
+                                    <span class="cert-year">2024</span>
+                                </div>
+                            </div>
+                            <div class="cert-card glass">
+                                <div class="cert-img-wrapper">
+                                    <img src="Sertif5.png" alt="Certificate" class="cert-img">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>Workshop Machine Learning</h4>
+                                    <span class="cert-issuer">Codelab Studio Indonesia</span>
+                                    <span class="cert-year">2026</span>
+                                </div>
+                            </div>
+                            <div class="cert-card glass">
+                                <div class="cert-img-wrapper">
+                                    <img src="sertif3.jpg" alt="Certificate" class="cert-img">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>DevOps Hosting for Beginners</h4>
+                                    <span class="cert-issuer">Dilesin Academy</span>
+                                    <span class="cert-year">2025</span>
+                                </div>
+                            </div>
+                            <div class="cert-card glass">
+                                <div class="cert-img-wrapper">
+                                    <img src="Sertif1.jpg" alt="Certificate" class="cert-img">
+                                </div>
+                                <div class="cert-info">
+                                    <h4>SENATIB 2025 – Transformasi UMKM di Era Ekonomi Digital</h4>
+                                    <span class="cert-issuer">Universitas Duta Bangsa</span>
+                                    <span class="cert-year">2025</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+
+                <!-- Tech Stack Tab -->
+                <div class="tab-pane" id="tab-tech">
+                    <div class="tech-grid">
+                        <!-- Group 1: Programming Languages -->
+                        <div class="tech-card glass"><i class="devicon-cplusplus-plain colored"></i><span>C++</span>
+                        </div>
+                        <div class="tech-card glass"><i class="devicon-python-plain colored"></i><span>Python</span>
+                        </div>
+                        <div class="tech-card glass"><i
+                                class="devicon-go-original-wordmark colored"></i><span>Golang</span></div>
+                        <div class="tech-card glass"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+                        <div class="tech-card glass"><i
+                                class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                        <div class="tech-card glass"><i class="devicon-dart-plain colored"></i><span>Dart</span></div>
+                        <div class="tech-card glass"><i class="devicon-html5-plain colored"></i><span>HTML5</span></div>
+                        <div class="tech-card glass"><i class="devicon-css3-plain colored"></i><span>CSS3</span></div>
+
+                        <!-- Group 2: Design & Creative Tools -->
+                        <div class="tech-card glass"><i
+                                class="devicon-photoshop-plain colored"></i><span>Photoshop</span></div>
+                        <div class="tech-card glass"><i
+                                class="devicon-illustrator-plain colored"></i><span>Illustrator</span></div>
+                        <div class="tech-card glass"><i class="devicon-aftereffects-plain colored"></i><span>After
+                                Effects</span></div>
+                        <div class="tech-card glass"><i
+                                class="devicon-blender-original colored"></i><span>Blender</span></div>
+                        <div class="tech-card glass"><i class="devicon-canva-original colored"></i><span>Canva</span>
+                        </div>
+                        <div class="tech-card glass"><i class="fa-solid fa-clapperboard"
+                                style="color: #00D8FF; font-size: 3.5rem;"></i><span>CapCut</span></div>
+
+                        <!-- Group 3: Frameworks, Databases & Development Tools -->
+                        <div class="tech-card glass"><i class="devicon-flutter-plain colored"></i><span>Flutter</span>
+                        </div>
+                        <div class="tech-card glass"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span>
+                        </div>
+                        <div class="tech-card glass"><i
+                                class="devicon-codeigniter-plain colored"></i><span>CodeIgniter</span></div>
+                        <div class="tech-card glass"><i class="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+                        <div class="tech-card glass"><i class="devicon-supabase-plain colored"></i><span>Supabase</span>
+                        </div>
+                        <div class="tech-card glass"><i class="devicon-firebase-plain colored"></i><span>Firebase</span>
+                        </div>
+                        <div class="tech-card glass"><i class="devicon-github-original colored"></i><span>GitHub</span>
+                        </div>
+                        <div class="tech-card glass"><i class="devicon-vscode-plain colored"></i><span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Tab -->
+                <div class="tab-pane" id="tab-design">
+                    <div class="slider-wrapper">
+                        <button class="slider-btn prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                        <div class="gallery-grid">
+                            <div class="gallery-item" data-category="Video Profil" data-tools="CapCut"
+                                data-youtube="https://www.youtube.com/embed/ez_krW0sJXQ"
+                                data-desc="Video Profil Desa Kayen yang dibuat selama kegiatan Kuliah Kerja Nyata (KKN) di Boyolali untuk menonjolkan potensi dan daya tarik desa.">
+                                <img src="videoprofil.png" alt="Video Profil Desa Kayen">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-brands fa-youtube" style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>Video Profil</h4>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-category="Infografis" data-tools="Canva"
+                                data-desc="Membuat desain infografis edukasi tentang Demam Berdarah Dengue (DBD) untuk menyampaikan informasi pencegahan dan meningkatkan kesadaran masyarakat.">
+                                <img src="poster.png" alt="Poster Design">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-solid fa-magnifying-glass-plus"
+                                            style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>Desain Infografis</h4>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-category="Logo Design" data-tools="Adobe Illustrator"
+                                data-desc="Mendesain logo untuk brand Sunny Baby Spa dengan konsep visual yang lembut, ramah anak, and mudah dikenali sebagai identitas brand.">
+                                <img src="logo.png" alt="Logo">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-solid fa-magnifying-glass-plus"
+                                            style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>Logo</h4>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-category="Motion Graphic" data-tools="Adobe After Effects"
+                                data-video="video2.mp4"
+                                data-desc="Membuat video animasi promosi produk donat UMKM menggunakan Adobe After Effects untuk meningkatkan daya tarik visual dan mendukung pemasaran digital produk.">
+                                <img src="video2.jpeg" alt="WPAP">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-solid fa-play" style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>Iklan Produk</h4>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-category="3D Modeling" data-tools="Blender"
+                                data-desc="Eksplorasi pembuatan objek 3D berupa Kue dengan menggunakan Blender.">
+                                <img src="kue.png" alt="3D Objects">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-solid fa-magnifying-glass-plus"
+                                            style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>Desain Objek 3D</h4>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-category="Social Media Design" data-tools="Canva"
+                                data-desc="Desain tata letak feed Instagram yang estetis dan kohesif untuk meningkatkan engagement sosial media.">
+                                <img src="feed.png" alt="Instagram Feed">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-solid fa-magnifying-glass-plus"
+                                            style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>Feed Instagram</h4>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-category="Poster" data-tools="Adobe Photoshop"
+                                data-desc="Membuat poster untuk promosi produk UMKM dengan tampilan visual yang menarik untuk mendukung promosi kuliner.">
+                                <img src="poster2.png" alt="Infographics">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-solid fa-magnifying-glass-plus"
+                                            style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>Poster</h4>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-category="3D Animation" data-tools="Blender"
+                                data-video="video1.mp4"
+                                data-desc="Membuat animasi karakter rubah (fox) bergerak melompat dari satu sisi ke sisi lainnya menggunakan teknik animasi digital.">
+                                <img src="video1.jpeg" alt="video1">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-solid fa-play" style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>Video Animasi</h4>
+                                </div>
+                            </div>
+
+                            <div class="gallery-item" data-category="WPAP" data-tools="Adobe Illustrator"
+                                data-desc="Membuat WPAP dengan gaya ilustrasi potret wajah manusia yang didominasi bidang-bidang datar dengan warna yang bersebrangan.">
+                                <img src="wpap.png" alt="wpap">
+                                <div class="gallery-overlay">
+                                    <div class="gallery-info">
+                                        <i class="fa-solid fa-magnifying-glass-plus"
+                                            style="font-size: 2.5rem; color: #fff;"></i>
+                                    </div>
+                                </div>
+                                <div class="gallery-caption">
+                                    <h4>WPAP</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="slider-btn next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section Moved to Showcase Tab -->
+
+    <!-- Skills section replaced by Showcase Tab -->
+
+    <!-- 6. Experience -->
+    <section id="experience" class="section reveal exp-section">
+        <div class="container">
+            <h2 class="section-title">Pengalaman</h2>
+
+            <div class="exp-timeline">
+
+                <div class="exp-tl-item">
+                    <div class="exp-tl-icon" style="background: linear-gradient(135deg, #4F6DFF, #7A3CFF);">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <div class="exp-tl-connector"></div>
+                    <div class="exp-tl-card glass">
+                        <div class="exp-tl-header">
+                            <div class="exp-tl-meta">
+                                <span class="exp-tl-badge active">● Aktif (2025)</span>
+                                <span class="exp-tl-type"><i class="fa-solid fa-building"></i> Self-Employed</span>
+                            </div>
+                            <h3>Freelance Design & Digital Services</h3>
+                        </div>
+                        <ul
+                            style="list-style: none; margin: 15px 0 18px 0; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                            <li
+                                style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                                <span
+                                    style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(79, 109, 255, 0.1); color: var(--electric-blue); flex-shrink: 0; margin-top: 3px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+                                </span>
+                                <span>Membuka jasa desain feed Instagram, logo, dan poster dll.</span>
+                            </li>
+                            <li
+                                style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                                <span
+                                    style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(79, 109, 255, 0.1); color: var(--electric-blue); flex-shrink: 0; margin-top: 3px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+                                </span>
+                                <span>Menggunakan Canva, Adobe Illustrator</span>
+                            </li>
+                        </ul>
+                        <div class="exp-tl-tags">
+                            <span><i class="fa-solid fa-brush"></i> Canva</span>
+                            <span><i class="fa-solid fa-palette"></i> Adobe Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-tl-item">
+                    <div class="exp-tl-icon" style="background: linear-gradient(135deg, #FF4D8D, #7A3CFF);">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <div class="exp-tl-connector"></div>
+                    <div class="exp-tl-card glass">
+                        <div class="exp-tl-header">
+                            <div class="exp-tl-meta">
+                                <span class="exp-tl-badge past">● Selesai (2022–2023)</span>
+                                <span class="exp-tl-type"><i class="fa-solid fa-building"></i> MervIndustries</span>
+                            </div>
+                            <h3>Reseller – MervIndustries</h3>
+                        </div>
+                        <ul
+                            style="list-style: none; margin: 15px 0 18px 0; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                            <li
+                                style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                                <span
+                                    style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(255, 77, 141, 0.1); color: var(--magenta-pink); flex-shrink: 0; margin-top: 3px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+                                </span>
+                                <span>Menjual produk almamater</span>
+                            </li>
+                            <li
+                                style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                                <span
+                                    style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(255, 77, 141, 0.1); color: var(--magenta-pink); flex-shrink: 0; margin-top: 3px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+                                </span>
+                                <span>Mengelola komunikasi dengan pelanggan</span>
+                            </li>
+                        </ul>
+                        <div class="exp-tl-tags">
+                            <span><i class="fa-solid fa-bullhorn"></i> Pemasaran</span>
+                            <span><i class="fa-solid fa-comments"></i> Komunikasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="exp-tl-item">
+                    <div class="exp-tl-icon" style="background: linear-gradient(135deg, #52E5FF, #4F6DFF);">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <div class="exp-tl-connector"></div>
+                    <div class="exp-tl-card glass">
+                        <div class="exp-tl-header">
+                            <div class="exp-tl-meta">
+                                <span class="exp-tl-badge org">● Organisasi (2021–2022)</span>
+                                <span class="exp-tl-type"><i class="fa-solid fa-school"></i> SMA Negeri 1 Bulu</span>
+                            </div>
+                            <h3>Ketua & Sekretaris OSIS</h3>
+                        </div>
+                        <ul
+                            style="list-style: none; margin: 15px 0 18px 0; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                            <li
+                                style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                                <span
+                                    style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(82, 229, 255, 0.1); color: var(--bright-cyan); flex-shrink: 0; margin-top: 3px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+                                </span>
+                                <span>Menjabat sebagai Sekretaris OSIS (2021), bertanggung jawab dalam administrasi,
+                                    pencatatan kegiatan, dan dokumentasi organisasi</span>
+                            </li>
+                            <li
+                                style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                                <span
+                                    style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(82, 229, 255, 0.1); color: var(--bright-cyan); flex-shrink: 0; margin-top: 3px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+                                </span>
+                                <span>Terpilih menjadi Ketua OSIS (2022), memimpin organisasi siswa dan mengelola
+                                    program kerja</span>
+                            </li>
+                            <li
+                                style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                                <span
+                                    style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(82, 229, 255, 0.1); color: var(--bright-cyan); flex-shrink: 0; margin-top: 3px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+                                </span>
+                                <span>Mengkoordinasikan tim dalam pelaksanaan kegiatan sekolah</span>
+                            </li>
+                            <li
+                                style="display: flex; gap: 12px; align-items: flex-start; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+                                <span
+                                    style="display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; border-radius: 50%; background: rgba(82, 229, 255, 0.1); color: var(--bright-cyan); flex-shrink: 0; margin-top: 3px;">
+                                    <i class="fa-solid fa-check" style="font-size: 0.65rem;"></i>
+                                </span>
+                                <span>Mengembangkan kemampuan leadership, komunikasi, dan manajemen tim</span>
+                            </li>
+                        </ul>
+                        <div class="exp-tl-tags">
+                            <span><i class="fa-solid fa-crown"></i> Kepemimpinan</span>
+                            <span><i class="fa-solid fa-calendar-check"></i> Event Org.</span>
+                            <span><i class="fa-solid fa-users"></i> Manajemen Tim</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Contact Section -->
+    <section id="contact" class="section reveal ct-section">
+        <div class="container">
+            <div class="ct-layout">
+
+                <!-- Left Column: Catchy Text -->
+                <div class="ct-left">
+                    <div class="ct-badge glass">
+                        <span class="pulse-dot"></span>
+                        Tersedia untuk Magang
+                    </div>
+                    <h2 class="ct-title">Mari Ciptakan<span class="gradient-text">Sesuatu yang Luar Biasa</span></h2>
+                    <p class="ct-desc">Saya terbuka untuk peluang kerja, kolaborasi project, maupun diskusi mengenai
+                        pengembangan web dan desain digital.</p>
+
+                    <div class="ct-social-pills">
+                        <a href="https://github.com/elisandksr" target="_blank" class="social-pill glass">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" class="social-pill glass">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Contact Cards -->
+                <div class="ct-right">
+                    <div class="ct-cards-grid">
+
+                        <a href="mailto:elisandksr11@gmail.com" class="ct-card-premium glass">
+                            <div class="ct-card-icon" style="background: linear-gradient(135deg, #4F6DFF, #7A3CFF);">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="ct-card-content">
+                                <span>Kirim Email</span>
+                                <strong>elis.andksr@gmail.com</strong>
+                            </div>
+                            <i class="fa-solid fa-arrow-right ct-card-arrow"></i>
+                        </a>
+
+                        <a href="https://wa.me/6285727572890" target="_blank" class="ct-card-premium glass">
+                            <div class="ct-card-icon" style="background: linear-gradient(135deg, #25D366, #128C7E);">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="ct-card-content">
+                                <span>Chat Cepat</span>
+                                <strong>WhatsApp Message</strong>
+                            </div>
+                            <i class="fa-solid fa-arrow-right ct-card-arrow"></i>
+                        </a>
+
+                        <div class="ct-info-mini glass">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Berlokasi di Sukoharjo, Jawa Tengah</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Elis Andikasari. Made with <span>♥</span> & Code.</p>
+        </div>
+    </footer>
+
+    <!-- Premium Immersive Modal -->
+    <div id="design-modal" class="premium-modal">
+        <div class="modal-ambient-bg"></div>
+        <div class="premium-modal-content">
+            <button class="premium-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="premium-modal-grid">
+                <div class="premium-modal-visual">
+                    <div class="visual-glow"></div>
+                    <img id="modal-img" src="" alt="Design">
+                    <video id="modal-video" controls class="modal-video-player"
+                        style="display: none; width: 100%; border-radius: 15px; z-index: 2; position: relative;"></video>
+                    <iframe id="modal-youtube" style="display: none; width: 100%; aspect-ratio: 16/9; border-radius: 15px; z-index: 2; position: relative; border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+                <div class="premium-modal-text">
+                    <div id="modal-badge" class="modal-badge">Design Project</div>
+                    <h3 id="modal-title">Design Title</h3>
+                    <div class="modal-divider"></div>
+                    <div id="modal-main-content">
+                        <p id="modal-desc">Design description goes here...</p>
+                        <div id="modal-project-details" style="display: none;">
+                            <div class="detail-section">
+                                <h4 class="detail-title"><i class="fa-solid fa-history"></i> Latar Belakang</h4>
+                                <p id="modal-bg-text"></p>
+                            </div>
+                            <div class="detail-section">
+                                <h4 class="detail-title"><i class="fa-solid fa-list-check"></i> Fitur Utama</h4>
+                                <ul id="modal-features-list" class="features-list"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-meta">
+                        <div class="meta-item">
+                            <span class="meta-label" id="meta-label-1">Kategori</span>
+                            <span class="meta-value" id="meta-value-1">Motion Graphic</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label" id="meta-label-2">Alat</span>
+                            <span class="meta-value" id="meta-value-2">Adobe After Effects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
