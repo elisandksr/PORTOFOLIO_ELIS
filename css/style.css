@@ -60,6 +60,7 @@ body.dark-theme {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 80px;
+  overflow-x: hidden;
 }
 
 body {
@@ -922,12 +923,26 @@ header.sticky {
   overflow-x: auto;
   padding: 20px 10px 50px 10px;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--electric-blue) rgba(15, 23, 42, 0.05);
 }
 
 .projects-grid::-webkit-scrollbar {
-  display: none;
+  height: 8px;
+}
+
+.projects-grid::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.05);
+  border-radius: 10px;
+}
+
+body.dark-theme .projects-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.projects-grid::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, var(--electric-blue), var(--magenta-pink));
+  border-radius: 10px;
 }
 
 .project-card {
@@ -1112,12 +1127,26 @@ header.sticky {
   overflow-x: auto;
   padding: 10px 10px 40px 10px;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--electric-blue) rgba(15, 23, 42, 0.05);
 }
 
 .gallery-grid::-webkit-scrollbar {
-  display: none;
+  height: 8px;
+}
+
+.gallery-grid::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.05);
+  border-radius: 10px;
+}
+
+body.dark-theme .gallery-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.gallery-grid::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, var(--electric-blue), var(--magenta-pink));
+  border-radius: 10px;
 }
 
 .gallery-item {
@@ -1902,12 +1931,26 @@ body.dark-theme .showcase-card {
   overflow-x: auto;
   padding: 10px 10px 40px 10px;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: thin;
+  scrollbar-color: var(--electric-blue) rgba(15, 23, 42, 0.05);
 }
 
 .cert-grid::-webkit-scrollbar {
-  display: none;
+  height: 8px;
+}
+
+.cert-grid::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.05);
+  border-radius: 10px;
+}
+
+body.dark-theme .cert-grid::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.cert-grid::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, var(--electric-blue), var(--magenta-pink));
+  border-radius: 10px;
 }
 
 .cert-card {
@@ -2057,23 +2100,21 @@ body.dark-theme .showcase-card {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: var(--surface-color);
+  background: linear-gradient(135deg, var(--electric-blue), var(--vibrant-purple));
   backdrop-filter: blur(10px);
-  border: 1px solid var(--border-color);
-  color: var(--text-primary);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 10;
-  box-shadow: var(--shadow-md);
+  box-shadow: 0 5px 15px rgba(79, 109, 255, 0.3);
   transition: var(--transition);
   font-size: 1.2rem;
 }
 
 .slider-btn:hover {
-  background: linear-gradient(135deg, var(--electric-blue), var(--vibrant-purple));
-  color: #fff;
   box-shadow: var(--shadow-glow);
   transform: translateY(-50%) scale(1.1);
 }
@@ -2471,6 +2512,23 @@ body.dark-theme .premium-modal-content {
 
   .about-info-cards {
     grid-template-columns: 1fr;
+  }
+
+  .tabs-wrapper {
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    max-width: 100%;
+  }
+
+  .tab-list {
+    white-space: nowrap;
+    border-radius: 20px;
+  }
+
+  .tab-btn {
+    padding: 10px 15px;
+    font-size: 0.95rem;
   }
 }
 
