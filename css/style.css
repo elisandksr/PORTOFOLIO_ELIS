@@ -2505,6 +2505,14 @@ body.dark-theme .premium-modal-content {
     font-size: 3rem;
   }
 
+  .section-title, .showcase-title {
+    font-size: 2.5rem;
+  }
+
+  .ct-title {
+    font-size: 2.5rem;
+  }
+
   .contact-cards {
     flex-direction: column;
     width: 100%;
@@ -2530,11 +2538,53 @@ body.dark-theme .premium-modal-content {
     padding: 10px 15px;
     font-size: 0.95rem;
   }
+
+  /* Portfolio Mobile Fixes */
+  .projects-grid, .gallery-grid, .cert-grid {
+    gap: 20px;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .project-card, .gallery-item, .cert-card {
+    width: 300px;
+    max-width: 80vw;
+  }
+
+  .project-img-container {
+    height: 180px;
+    margin: 10px 10px 0 10px;
+  }
+
+  .project-content {
+    padding: 15px;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  
+  .project-desc {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+
+  .gallery-item img, .cert-img {
+    height: 180px;
+  }
 }
 
 @media (max-width: 480px) {
   .hero-title {
     font-size: 2.5rem;
+  }
+
+  .section-title, .showcase-title {
+    font-size: 2rem;
+  }
+
+  .ct-title {
+    font-size: 2rem;
   }
 
   .btn {
