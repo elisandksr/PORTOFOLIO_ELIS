@@ -2221,9 +2221,51 @@ body.dark-theme .premium-modal-content {
 }
 
 @media (max-width: 768px) {
+  .premium-modal-content {
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+
   .premium-modal-grid {
     grid-template-columns: 1fr;
     min-height: auto;
+    overflow-y: auto;
+    flex: 1;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .premium-close-btn {
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 50;
+  }
+
+  .premium-modal-visual {
+    padding: 60px 20px 20px 20px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .premium-modal-visual img {
+    max-height: 35vh;
+  }
+
+  .premium-modal-text {
+    padding: 25px 20px;
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .premium-modal-text h3 {
+    font-size: 1.8rem;
+  }
+
+  .modal-meta {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
 
