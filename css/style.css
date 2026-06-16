@@ -668,7 +668,10 @@ header.sticky {
 
 .hero-cta {
   display: flex;
-  gap: 20px;
+  gap: 15px;
+  margin-top: 30px;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 /* About Modern Section */
@@ -2471,6 +2474,10 @@ body.dark-theme .premium-modal-content {
     margin-right: auto;
   }
 
+  .hero-cta {
+    justify-content: center;
+  }
+
   .hero-visual {
     margin-top: 50px;
   }
@@ -2646,5 +2653,10 @@ body.dark-theme .premium-modal-content {
   .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
   }
 }
